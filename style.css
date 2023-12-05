@@ -526,7 +526,7 @@ footer{
         
         .page4{
             width: 100%;
-            height: 120vh;
+            height: fit-content;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -545,6 +545,44 @@ footer{
         .child img{
             height: 100%;
         }
+
+
+
+
+        
+        
+        .footer-col {
+            width: 25%;
+            padding: 0 .1vw;
+        }
+        
+        .footer-col h4 {
+            font-size: 2.5vw;
+        }
+        
+        
+        .footer-col  a {
+            font-size: 1.8vw;
+            margin-bottom: .8vw;
+        }
+        
+        .social-links i {
+            display: block;
+            margin-bottom: 1vw;
+            height: 5vw;
+            width: 5vw;
+            padding: .4vw .6vw;
+            padding-top: 1vw;
+            font-size: 3vw;
+        }
+
+        .social-links i:hover{
+            border: .1vw solid black;
+            background-color: transparent;
+            color: #000;
+        }
+        
+       
         
 }
 
