@@ -92,3 +92,18 @@ gsap.to(".cursor",{
 
 cursoranimatin();
 
+
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".page2",
+        scroller: "#main",
+        start: "top -2%",
+        end: "top -50%",
+        scrub: 2
+    }
+});
+
+tl.to(".page2",{
+    backgroundColor:"#000",     
+    color:"#fff"
+})
