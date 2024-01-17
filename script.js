@@ -2,6 +2,25 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('.main'),
     smooth: true
 });
+// var main = document.querySelector(".main")
+// var loader = document.querySelector(".loader")
+
+// var tl = gsap.timeline();
+
+// tl.to(loader,{
+//     opacity:0,
+//     delay:3,
+//     // scale:-1,
+//     // top:"-100%",
+//     // duration:2,
+
+// });
+
+// tl.to(main,{
+//     opacity: 1,
+//     scale:1,
+//     display: "inline"
+// });
 
 function loadinganimation(){
     gsap.from("#page1 h1",{
@@ -22,6 +41,8 @@ function loadinganimation(){
     });
 };
 loadinganimation();
+
+
 
 
 function videoanimation(){
