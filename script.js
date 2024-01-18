@@ -2,25 +2,20 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('.main'),
     smooth: true
 });
-// var main = document.querySelector(".main")
-// var loader = document.querySelector(".loader")
 
-// var tl = gsap.timeline();
+const loader = document.querySelector(".loader")
+const main = document.querySelector(".main")
 
-// tl.to(loader,{
-//     opacity:0,
-//     delay:3,
-//     // scale:-1,
-//     // top:"-100%",
-//     // duration:2,
+let trl = gsap.timeline();
+trl.to(loader,{
+   opacity: 0,
+   delay: 2
+})
+trl.to(loader,{
+    y: "-100%",
+    duration: .1,
+})
 
-// });
-
-// tl.to(main,{
-//     opacity: 1,
-//     scale:1,
-//     display: "inline"
-// });
 
 function loadinganimation(){
     gsap.from("#page1 h1",{
